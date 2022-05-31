@@ -1,0 +1,8 @@
+#cardItem {
+    border: solid 2px rgb(10, 112, 41);
+    border-radius: 10px;
+    width: 30vw;
+    height: 200px;
+    margin: 60px;
+    padding: 20px;
+}
