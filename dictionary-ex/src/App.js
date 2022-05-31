@@ -12,9 +12,9 @@ import Home from './Home';
 function App() {
   return (
     <div className="App">
-    <Link to="/" style={{textDecoration: "none"}}>
-    <TopNav/>
-    </Link>
+      <Link to="/" style={{textDecoration: "none"}}>
+        <TopNav/>
+      </Link>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='add' element={<AddWord></AddWord>}/>

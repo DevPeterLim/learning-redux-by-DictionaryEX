@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 const Home = ()=>{
     return (
         <>
-        <Card />
-        <Link to="add">
-            <AddBtn/>
-        </Link>
-    </>
+            <Card />
+            <Link to="add">
+                <AddBtn/>
+            </Link>
+        </>
     )
 }
 

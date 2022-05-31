@@ -7,9 +7,7 @@ import AddWord from './AddWord';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-
-let store = createStore(()=>{return [{id:0, name: '머진신발'}]})
+import store from './redux/configStore';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
