@@ -22,12 +22,10 @@ const initialState = {
 
 // Action Creators
 export function createWord(word_data){
-    console.log("created", word_data)
     return { type:CREATE, word_data }
 }
 
 export function loadWord(word_list) {
-    console.log("loaded")
     return { type: LOAD, word_list };
 }
 
@@ -44,7 +42,7 @@ export function loadWord(word_list) {
 // }
 export const loadWordFB = () => {
     return async function(dispatch) {
-        const word_data = await getDoc(collection(db, "WordPost"));
+        const word_data = await getDocs(collection(db, "WordPost"));
         let word_list = [];
 
         word_data.forEach((doc) => {

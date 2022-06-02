@@ -15,11 +15,11 @@ import { useDispatch } from 'react-redux';
 
 
 function App() {
-  const [WordPost, setWords] = useState([]);
-  const wordCollectionRef = collection(db, "WordPost");
-  const uniqueId = useId();
-  console.log(uniqueId)
-
+  // const [WordPost, setWords] = useState([]);
+  // const wordCollectionRef = collection(db, "WordPost");
+  // const uniqueId = useId();
+  // console.log(uniqueId)
+  // 
   // useEffect(()=>{
   //   const getWords = async ()=>{
   //     const data = await getDocs(wordCollectionRef);
@@ -39,10 +39,6 @@ function App() {
         <Route path='add' element={<AddWord></AddWord>}/>
         <Route/>
       </Routes>
-  
-    
-      
-      
     </div>
   );
 }
